@@ -247,7 +247,7 @@
         center = [old_ll[0] + old_width * absoluteX, old_ll[1] + old_width * absoluteY];
 
         /* Set target values */
-        new_width = old_width * (zoom ? 0.5 : 2.0);
+        new_width = old_width * (zoom ? 0.5 : 1000000.0);
         new_ll = [center[0] - new_width/2.0, center[1] - new_width/2.0];
         new_ur = [center[0] + new_width/2.0, center[1] + new_width/2.0];
 
